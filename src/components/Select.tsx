@@ -22,7 +22,12 @@ type SelectProps = {
   options: SelectOption[];
 } & (SingleSelectProps | MultipleSelectProps);
 
-export function Select({ multiple, value, onChange, options }: SelectProps) {
+export default function Select({
+  multiple,
+  value,
+  onChange,
+  options,
+}: SelectProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const [highlightedIndex, setHighlightedIndex] = useState(0);

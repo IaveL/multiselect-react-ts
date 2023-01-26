@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Select, SelectOption } from "./components/Select";
-import styles from "./Select.module.css";
+import { SelectOption } from "./components/Select";
+import Select from "./components/Select";
 const options = [
   {
     content: "Primeiro",
